@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth; /*jeśli klikniemy na poszczególne linki na naszej stronie np.HOME czy coś to będziemy tak odrazu przechodzili do poszczególnej sekcji np. wspomniane HOME*/
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Poppins", Arial, Helvetica, sans-serif; /*Poppins wzięło się od naszej czcionki skopiowanej z Google Fonts*/
+}
+#navbar{
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    position: sticky; /* zapewni nam to, że nasz nav bar będzie autmatycznie przypięty podczas scrollowania*/
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.1);
+}
+#navbar ul{
+    display: flex;
+    margin: 10px 0 10px auto;
+    width: 55%;
+    justify-content: space-evenly; /*sprawi to, że te wszystkie elementy bedą rozłożone równomiernie dla przestrzeni, która jest dla nich dostępna*/
+    list-style: none; /*żeby nie było tych kropeczek pizdeczek*/
+}
+#navbar ul li a{
+    margin-left: 3px;
+    color: black;
+    opacity: 0.7; /*jasność tego koloru*/
+    font-size: 1.2rem;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: lightgreen;
+    opacity: 1;
+    text-decoration: underline;
+    transition: all 0.2s; /*po jakim czasie ma się ten kolor + underline pojawić*/
+}
+#intro-section{
+    background-image:url("https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg") ;
+    height: 300px;
+    background-size: cover;
+}
+#welcome-section{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    display: flex;
+    margin: 20px;
+    width: 500px;
+    justify-content: center; /*centrowanie na osi OX*/
+    align-items: center; /*centrowanie na osi OY*/
+    font-size: 2rem;
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.message img{
+    max-width: 100%; /*maksymalna szerokość to 100% naszego nadrzędnego elementu, czyli tego z klasą div message*/
+}
+section{
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+.section-heading{
+    font-size: 2rem;
+    text-align: center;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+div.my-information{
+    display: block; /*dzięki temu wszystkie elementy bedą jeden pod drugim*/ /*możemy użyc także flex-direction: column;*/
+    font-size: 1.5rem;
+    text-align: left;
+}
+div.my-information p::before{
+    content: "💻";
+}
+#skills-section{
+    background-color: black;
+    color: white;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+.skill-information{
+    padding: 2rem;
+    text-align: center;
+}
+.skill-name{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.skill-information progress{
+    background-color: white;
+    border: 1px solid white;
+}
+.skill-information progress::-webkit-progress-value{
+    background-color: white;
+    border-radius: 0;
+}
+.skill-information progress::-webkit-progress-bar{
+    background-color: black;
+}
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-container .image-box{
+    margin: 5px;
+
+}
+.image-box a{
+    text-decoration: none;
+    text-align: center;
+}
+#contact-section{
+    background-color: black;
+    margin-top: 50px;
+    padding: 50px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#contact-section a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
